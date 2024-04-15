@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Salesforce Field Explorer",
+    "version": "1.0",
+    "description": "Search and display Salesforce object fields and IDs",
+    "permissions": ["cookies"],
+    "host_permissions": [
+      "https://*.salesforce.com/*",
+      "https://*.force.com/*",
+      "https://*.cloudforce.com/*",
+      "https://*.visualforce.com/*",
+      "https://*.sfcrmapps.cn/*",
+      "https://*.sfcrmproducts.cn/*",
+      "https://*.salesforce.mil/*",
+      "https://*.force.mil/*",
+      "https://*.cloudforce.mil/*",
+      "https://*.visualforce.mil/*",
+      "https://*.crmforce.mil/*",
+      "https://*.force.com.mcas.ms/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+  }
+  
